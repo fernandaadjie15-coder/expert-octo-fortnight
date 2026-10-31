@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { createAppointment, getAppointments } from '../api'
+import { createAppointment, getAppointments } from './api'
 
 const departments = ['Umum', 'Anak', 'Kandungan', 'Jantung']
 const inputClassName =
