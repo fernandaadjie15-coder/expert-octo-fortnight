@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { getPatients } from '../api'
+import AppointmentPanel from './AppointmentPanel'
 import PatientTable from './PatientTable'
 import RegistrationForm from './RegistrationForm'
 import WeatherWidget from './WeatherWidget'
@@ -117,6 +118,8 @@ function Dashboard() {
             patients={patients}
           />
         </div>
+
+        <AppointmentPanel patients={patients} />
 
         <p className="mt-6 text-center text-xs text-slate-500">
           Data hanya disimpan sementara di memori backend dan akan terhapus saat server dimulai ulang.

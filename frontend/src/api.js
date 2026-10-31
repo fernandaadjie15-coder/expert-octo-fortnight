@@ -47,3 +47,14 @@ export function createPatient(patient) {
     body: JSON.stringify(patient),
   })
 }
+
+export function getAppointments() {
+  return request('/appointments/')
+}
+
+export function createAppointment(appointment) {
+  return request('/appointments/', {
+    method: 'POST',
+    body: JSON.stringify(appointment),
+  })
+}
