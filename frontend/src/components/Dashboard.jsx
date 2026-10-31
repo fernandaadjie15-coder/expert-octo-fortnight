@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { getPatients } from '../api'
-import AppointmentPanel from './AppointmentPanel'
+import AppointmentPanel from '../features/fitur_baru/AppointmentPanel'
 import PatientTable from './PatientTable'
 import RegistrationForm from './RegistrationForm'
 import WeatherWidget from './WeatherWidget'

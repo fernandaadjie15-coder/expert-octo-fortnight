@@ -2,7 +2,7 @@ const API_BASE_URL = (
   import.meta.env.VITE_API_BASE_URL || '/api'
 ).replace(/\/+$/, '')
 
-async function request(path, options) {
+export async function request(path, options = {}) {
   let response
 
   try {
@@ -45,16 +45,5 @@ export function createPatient(patient) {
   return request('/patients/', {
     method: 'POST',
     body: JSON.stringify(patient),
-  })
-}
-
-export function getAppointments() {
-  return request('/appointments/')
-}
-
-export function createAppointment(appointment) {
-  return request('/appointments/', {
-    method: 'POST',
-    body: JSON.stringify(appointment),
   })
 }

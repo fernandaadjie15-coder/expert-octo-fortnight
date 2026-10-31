@@ -11,6 +11,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "patients",
+    "fitur_baru",
 ]
 
 MIDDLEWARE = [
